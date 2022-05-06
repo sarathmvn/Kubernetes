@@ -1,0 +1,16 @@
+# Simple YAML to create a new PVC
+#
+# Author: Sarath
+# Version: 20220501
+#
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: new-pvc
+spec:
+  accessModes:
+  - ReadWriteOnce
+  storageClassName: default
+  resources:
+    requests:
+      storage: 5Gi

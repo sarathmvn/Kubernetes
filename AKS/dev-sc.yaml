@@ -1,0 +1,16 @@
+# Simple YAML to create a new StorageClass
+#
+# Author: Sarath
+# Version: 20220501
+#
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: new-sc
+provisioner: kubernetes.io/azure-disk  
+parameters:
+  skuname: StandardSSD_LRS
+  resourceGroup: new-resourcegroup
+volumeBindingMode: WaitForFirstConsumer
+allowVolumeExpansion: true
+reclaimPolicy: Retain  

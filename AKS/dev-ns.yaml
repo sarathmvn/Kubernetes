@@ -1,0 +1,9 @@
+# Simple YAML to create a new namespace 
+#
+# Author: Sarath
+# Version: 20220501
+#
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: namespace-name
